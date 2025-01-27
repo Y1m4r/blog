@@ -42,7 +42,6 @@ This writeup covers the following phases of a penetration test:
 
 Nmap is used to identify open ports and the services running on them. The following command is executed:
 
-```bash
 nmap -Pn -sV -O -p- -T4 -sC 10.0.0.5
 ## Phase 1: Scanning
 
@@ -62,7 +61,6 @@ From the initial Nmap scan, the `robots.txt` file is discovered, which includes 
 ### Directory Enumeration
 To gather more information, directory enumeration is performed using the following command:
 
-```bash
 nmap -sV -p80 --script=http-enum 10.0.0.5
 This scan reveals two additional directories: /image/ and /manual/, though they do not contain relevant information.
 
