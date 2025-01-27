@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Writeup - Hack The Box
-excerpt: "Writeup starts off easy with an unauthenticated vulnerability in CMS Made Simple that I exploit to dump the database credentials. After cracking the user hash, I can log in to the machine because the user re-used the same password for SSH. The priv esc is pretty nice: I have write access to `/usr/local` and I can write a binary payload in there that gets executed by run-parts when I SSH in because it's called without the full path. Another nice box by jkr."
+excerpt: "The writeup begins with a straightforward unauthenticated vulnerability in CMS Made Simple, which I exploit to retrieve the database credentials. After cracking the user's hash, I discover they reused the same password for SSH, allowing me to access the machine. The privilege escalation is particularly interesting: I have write permissions on /usr/local, enabling me to place a binary payload that gets executed by run-parts when I log in via SSH, as it is invoked without the full path."
 date: 2024-11-12
 classes: wide
 header:

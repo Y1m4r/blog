@@ -5,7 +5,7 @@ excerpt: "A detailed walkthrough of the scanning, enumeration, and exploitation 
 date: 2024-10-24
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-writeup/lupinone_logo.png
+  teaser: /assets/images/vulnhub-lupinone-writeup/lupinone_logo.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
@@ -16,6 +16,7 @@ categories:
   #- ffuf
   #- Metasploit
 ---
+![](/assets/images/vulnhub-lupinone-writeup/lupinone_logo.png)
 
 This writeup details the steps taken during the scanning, enumeration, and exploitation phases of a penetration test. The target machine is analyzed using tools like Nmap, ffuf, and Metasploit, leading to the discovery of hidden files, user enumeration, and privilege escalation.
 
