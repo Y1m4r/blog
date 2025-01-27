@@ -5,9 +5,9 @@ excerpt: "A step-by-step guide to setting up a home SIEM lab using Elastic and K
 date: 2024-10-24
 classes: wide
 header:
-  teaser: /assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.png
+  teaser: /blog/assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.png
   teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
+  icon: /blog/assets/images/hackthebox.webp
 categories:
   - Tools
 #tags:
@@ -16,11 +16,15 @@ categories:
   #- Kali Linux
   #- SOC
 ---
-![](/assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.png)
+![](../assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.jpg)
+
 
 This writeup provides a detailed guide on building a home SIEM (Security Information and Event Management) lab using Elastic and Kali Linux. The lab is designed to give you practical experience in SOC (Security Operations Center) analyst work, including setting up a SIEM, pushing telemetry, creating dashboards, and setting up alerts.
+![](/../assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.jpg)
+
 
 ## Summary
+![](blog/assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.jpg)
 
 This guide walks you through the process of setting up a home SIEM lab using Elastic and Kali Linux. The key steps include:
    - Setting up an Elastic Cloud account and deploying an Elastic instance.
@@ -30,7 +34,7 @@ This guide walks you through the process of setting up a home SIEM lab using Ela
    - Creating dashboards and alerts in Elastic to visualize and detect security events.
 
 ## Tools/Blogs Used
-
+![](/blog/assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.jpg)
 - **Elastic Cloud**: Used for deploying the SIEM and managing telemetry.
 - **VirtualBox**: Used for running the Kali Linux VM.
 - **Kali Linux**: Used as the endpoint for generating security events.

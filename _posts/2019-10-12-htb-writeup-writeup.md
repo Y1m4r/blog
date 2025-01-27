@@ -7,7 +7,7 @@ classes: wide
 header:
   teaser: /blog/assets/images/htb-writeup-writeup/writeup_logo.png
   teaser_home_page: true
-  icon: /../assets/images/hackthebox.webp
+  icon: /blog/assets/images/hackthebox.webp
 categories:
   - WriteUp
 #tags:
@@ -16,7 +16,7 @@ categories:
   #- cms
 ---
 
-![](/blog/assets/images/htb-writeup-writeup/writeup_logo.png)
+![](../assets/images/htb-writeup-writeup/writeup_logo.png)
 
 Writeup starts off easy with an unauthenticated vulnerability in CMS Made Simple that I exploit to dump the database credentials. After cracking the user hash, I can log in to the machine because the user re-used the same password for SSH. The priv esc is pretty nice: I have write access to `/usr/local` and I can write a binary payload in there that gets executed by run-parts when I SSH in because it's called without the full path. Another nice box by jkr.
 
@@ -81,19 +81,19 @@ There's a hint at the bottom of the page that it's *NOT* made with vim.
 
 Checking out the source code, I can see it's made with CMS Made Simple.
 
-![](/../assets/images/htb-writeup-writeup/4.png)
+![](/./assets/images/htb-writeup-writeup/4.png)
 
 ### SQL injection in CMS
 
 Checking out searchsploit, I see a whole bunch of exploits for that CMS.
 
-![](../assets/images/htb-writeup-writeup/5.png)
+![](/assets/images/htb-writeup-writeup/5.png)
 
 The one I highlighted above is an Unauthenticated SQL Injection that allows an attacker to dump the username and password hash from the database. To exploit it, we just need to pass the URI of the CMS and the wordlist we'll use to crack the password hash:
 
 `python exploit.py -u http://10.10.10.138/writeup/ --crack -w /usr/share/wordlists/rockyou.txt`
 
-![](/assets/images/htb-writeup-writeup/6.png)
+![](../assets/images/htb-writeup-writeup/6.png)
 
 We just found the password for user `jkr`: `raykayjay9`
 
@@ -140,7 +140,7 @@ However, I can't see the contents of `/usr/local/bin` and `/usr/local/sbin`. Thi
 
 I copied `pspy` to the box and found a cronjob running every minute:
 
-![](/assets/images/htb-writeup-writeup/7.png)
+![](../assets/images/htb-writeup-writeup/7.png)
 
 I don't have access to the content of the script but it's safe to assume that it deletes files or folders somewhere on the system. I created a test file inside `/usr/local/bin` to see if the script would delete it. After a minute, I saw that the file was removed:
 
@@ -180,7 +180,7 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin
 
 I also noticed that the `run-parts` program is executed whenever I SSH in:
 
-![](/assets/images/htb-writeup-writeup/8.png)
+![](../assets/images/htb-writeup-writeup/8.png)
 
 > run-parts runs all the executable files named within constraints described below, found in directory  directory. Other files and directories are silently ignored.
 
@@ -194,5 +194,5 @@ chmod +x ./shell
 
 I just need to upload the file to `/usr/local/bin/run-parts` and SSH in to trigger a callback and get root privileges.
 
-![](/assets/images/htb-writeup-writeup/9.png)
+![](../assets/images/htb-writeup-writeup/9.png)
 
