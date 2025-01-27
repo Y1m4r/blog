@@ -42,7 +42,7 @@ This writeup covers the following phases of a penetration test:
 Nmap is used to identify open ports and the services running on them. The following command is executed:
 
 nmap -Pn -sV -O -p- -T4 -sC 10.0.0.5
-![](/assets/images/vulnhub-lupinone-writeup/lupinone1.png)
+![](/assets/images/vulnhub-lupinone-writeup/lupinnmap.png)
 
 ## Phase 1: Scanning
 
@@ -58,7 +58,7 @@ Additionally, the operating system is identified as a Linux version between 4.X 
 
 ### Initial Enumeration
 From the initial Nmap scan, the `robots.txt` file is discovered, which includes the path `/~myfiles`. However, accessing this path results in a 404 error.
-![](/assets/images/vulnhub-lupinone-writeup/lupinone2.png)
+![](/assets/images/vulnhub-lupinone-writeup/lupinerror.png)
 
 ### Directory Enumeration
 To gather more information, directory enumeration is performed using the following command:
