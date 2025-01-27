@@ -5,7 +5,7 @@ excerpt: "A step-by-step guide to setting up a home SIEM lab using Elastic and K
 date: 2024-10-24
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-writeup/siem_lab_logo.png
+  teaser: /assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
@@ -16,8 +16,6 @@ categories:
   #- Kali Linux
   #- SOC
 ---
-
-![](/assets/images/htb-writeup-writeup/siem_lab_logo.png)
 
 This writeup provides a detailed guide on building a home SIEM (Security Information and Event Management) lab using Elastic and Kali Linux. The lab is designed to give you practical experience in SOC (Security Operations Center) analyst work, including setting up a SIEM, pushing telemetry, creating dashboards, and setting up alerts.
 

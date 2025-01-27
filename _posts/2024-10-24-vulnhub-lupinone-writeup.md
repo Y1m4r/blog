@@ -1,11 +1,11 @@
 ---
 layout: single
-title: Writeup - Penetration Testing Phases: Scanning, Enumeration, and Exploitation
+title: Writeup - Penetration Testing Phases:Scanning, Enumeration, and Exploitation
 excerpt: "A detailed walkthrough of the scanning, enumeration, and exploitation phases during a penetration test, including the use of tools like Nmap, ffuf, and Metasploit."
 date: 2024-10-24
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-writeup/pen_test_logo.png
+  teaser: /assets/images/htb-writeup-writeup/lupinone_logo.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
@@ -16,8 +16,6 @@ categories:
   #- ffuf
   #- Metasploit
 ---
-
-![](/assets/images/htb-writeup-writeup/lupinone_logo.png)
 
 This writeup details the steps taken during the scanning, enumeration, and exploitation phases of a penetration test. The target machine is analyzed using tools like Nmap, ffuf, and Metasploit, leading to the discovery of hidden files, user enumeration, and privilege escalation.
 
@@ -43,6 +41,8 @@ This writeup covers the following phases of a penetration test:
 Nmap is used to identify open ports and the services running on them. The following command is executed:
 
 nmap -Pn -sV -O -p- -T4 -sC 10.0.0.5
+![](/assets/images/vulnhub-lupinone-writeup/lupinone1.png)
+
 ## Phase 1: Scanning
 
 The scan reveals two open ports:
@@ -57,6 +57,7 @@ Additionally, the operating system is identified as a Linux version between 4.X 
 
 ### Initial Enumeration
 From the initial Nmap scan, the `robots.txt` file is discovered, which includes the path `/~myfiles`. However, accessing this path results in a 404 error.
+![](/assets/images/vulnhub-lupinone-writeup/lupinone2.png)
 
 ### Directory Enumeration
 To gather more information, directory enumeration is performed using the following command:
