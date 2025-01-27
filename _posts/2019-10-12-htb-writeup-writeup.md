@@ -5,7 +5,7 @@ excerpt: "The writeup begins with a straightforward unauthenticated vulnerabilit
 date: 2024-11-12
 classes: wide
 header:
-  teaser: /../assets/images/htb-writeup-writeup/writeup_logo.png
+  teaser: /blog/assets/images/htb-writeup-writeup/writeup_logo.png
   teaser_home_page: true
   icon: /../assets/images/hackthebox.webp
 categories:
@@ -16,7 +16,7 @@ categories:
   #- cms
 ---
 
-![](/../assets/images/htb-writeup-writeup/writeup_logo.png)
+![](/blog/assets/images/htb-writeup-writeup/writeup_logo.png)
 
 Writeup starts off easy with an unauthenticated vulnerability in CMS Made Simple that I exploit to dump the database credentials. After cracking the user hash, I can log in to the machine because the user re-used the same password for SSH. The priv esc is pretty nice: I have write access to `/usr/local` and I can write a binary payload in there that gets executed by run-parts when I SSH in because it's called without the full path. Another nice box by jkr.
 
@@ -49,7 +49,7 @@ Nmap done: 1 IP address (1 host up) scanned in 105.16 seconds
 
 The website contains information about fail2ban or a similar kind of script running to prevent 40x errors. This means that if we try to dirbust the site we'll probably get banned.
 
-![](/../assets/images/htb-writeup-writeup/1.png)
+![](./assets/images/htb-writeup-writeup/1.png)
 
 So I checked `robots.txt` and found the following:
 
@@ -71,13 +71,13 @@ Disallow: /writeup/
 
 Checking out `http://10.10.10.138/writeup/` I see it's some kind of barebone webpage.
 
-![](/../assets/images/htb-writeup-writeup/2.png)
+![](blog/assets/images/htb-writeup-writeup/2.png)
 
 The links just display different writeups for previous HTB boxes. I couldn't trigger any LFI, RFI or SQL injection from `/writeup/index.php?page=`
 
 There's a hint at the bottom of the page that it's *NOT* made with vim.
 
-![](/../assets/images/htb-writeup-writeup/3.png)
+![](/blog/assets/images/htb-writeup-writeup/3.png)
 
 Checking out the source code, I can see it's made with CMS Made Simple.
 
