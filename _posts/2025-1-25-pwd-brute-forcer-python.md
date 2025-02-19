@@ -10,10 +10,6 @@ header:
   icon: 
 categories:
   - Tools
-#tags:
- # - bruteforce
-  #- python
-  #- passwordcracking
 ---
 
 This Python script is designed to brute-force passwords of length 1 to 7, using lowercase letters and numbers. It is intended for educational and ethical purposes only. The program demonstrates how brute-forcing works and can be modified to suit specific needs, such as cracking longer passwords or including uppercase letters and special characters.

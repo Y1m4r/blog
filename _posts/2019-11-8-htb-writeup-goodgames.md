@@ -10,9 +10,6 @@ header:
   icon: /blog/assets/images/hackthebox.webp
 categories:
   - WriteUp
-#tags:
- # - linux
-  #- http
 ---
 
 ## Synopsis

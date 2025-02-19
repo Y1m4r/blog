@@ -10,11 +10,6 @@ header:
   icon: ../assets/images/hackthebox.webp
 categories:
   - WriteUp
-#tags:
- # - Penetration Testing
-  #- Nmap
-  #- ffuf
-  #- Metasploit
 ---
 ![](../assets/images/vulnhub-lupinone-writeup/lupinone_logo.png)
 

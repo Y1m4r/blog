@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Event ID 86: Phishing URL Detected | Phishing Email Analysis"
+title: Phishing URL Detected | Phishing Email Analysis
 excerpt: "A detailed walkthrough of analyzing and responding to a phishing URL detection alert in a SOC environment from Let's Defend."
 date: 2024-10-13
 classes: wide
@@ -12,12 +12,14 @@ categories:
   - Incident Response
 ---
 
-# **SOC141 — Phishing URL Detected**  
+# SOC141 — Phishing URL Detected**  
 
 ## **Triggered Alert**  
 On **March 22nd**, an alert was triggered, indicating a **phishing URL** detected on the host system **EmilyComp** (IP: **172.16.17.49**). We will now claim the ticket and proceed with the investigation following our playbook.  
 ![](../assets/images/phishing-url-detected/1.png)
+
 ![](../assets/images/phishing-url-detected/2.png)
+
 ![](../assets/images/phishing-url-detected/3.png)
 
 ---
@@ -29,6 +31,7 @@ Our investigation follows standard procedures, focusing on critical details:
 - The **source IP (172.16.17.49)** is linked to **EmilyComp**.  
 - The **destination IP (91.189.114.8)** requires further analysis using **VirusTotal** and **AbuseIPDB** to determine its reputation.  
 ![](../assets/images/phishing-url-detected/4.png)
+
 ![](../assets/images/phishing-url-detected/5.png)
 
 
@@ -50,6 +53,7 @@ Reports confirm that the detected URL is indeed **malicious** and associated wit
 Reviewing network logs, we identify **two instances** where the **malicious IP and URL** were accessed. Both requests originated from **EmilyComp (172.16.17.49)**, confirming that her device is the **only affected host**.  
 
 ![](../assets/images/phishing-url-detected/8.png)
+
 ![](../assets/images/phishing-url-detected/9.png)
 
 ---

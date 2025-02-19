@@ -1,8 +1,7 @@
 ---
 layout: single
 title: Conquering the eJPTv2, My Journey and Tips
-excerpt: "Taking the eJPT v2 was a game-changer for me. It’s not just a certification—it’s a hands-on journey into the world of ethical hacking and penetration testing. With real-world labs, a browser-based exam environment, and a focus on practical skills, it gave me a genuine taste of what it’s like to work in cybersecurity. 
-The exam itself was challenging but fair, with a strong emphasis on enumeration and exploiting common vulnerabilities."
+excerpt: "Taking the eJPT v2 was a game-changer for me. It’s not just a certification—it’s a hands-on journey into the world of ethical hacking and penetration testing. With real-world labs, a browser-based exam environment, and a focus on practical skills, it gave me a genuine taste of what it’s like to work in cybersecurity. The exam itself was challenging but fair, with a strong emphasis on enumeration and exploiting common vulnerabilities."
 date: 2024-11-21
 classes: wide
 header:
@@ -11,12 +10,7 @@ header:
   icon: 
 categories:
   - Tools
-#tags:
- # - ejpt
-  #- penetration testing
-  #- metasploit
 ---
-
 
 This Python script is designed to brute-force passwords of length 1 to 7, using lowercase letters and numbers. It is intended for educational and ethical purposes only. The program demonstrates how brute-forcing works and can be modified to suit specific needs, such as cracking longer passwords or including uppercase letters and special characters.
 
