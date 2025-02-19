@@ -10,11 +10,7 @@ header:
   icon: /blog/assets/images/hackthebox.webp
 categories:
   - Tools
-#tags:
- # - SIEM
-  #- Elastic
-  #- Kali Linux
-  #- SOC
+
 ---
 ![](../assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.jpg)
 
