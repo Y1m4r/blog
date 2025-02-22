@@ -5,7 +5,7 @@ excerpt: "GoodGames is an easy Linux machine highlighting SQL injection, weak ha
 date: 2024-10-26
 classes: wide
 header:
-  teaser: /blog/assets/images/htb-writeup-goodgames/goodgames.jpg
+  teaser: /blog/assets/images/htb-writeup-goodgames/goodgames.png
   teaser_home_page: true
   icon: /blog/assets/images/hackthebox.webp
 categories:

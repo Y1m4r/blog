@@ -5,7 +5,7 @@ excerpt: "A detailed walkthrough of the scanning, enumeration, and exploitation 
 date: 2024-11-16
 classes: wide
 header:
-  teaser: /blog/assets/images/vulnhub-lupinone-writeup/lupinone_logo.png
+  teaser: /blog/assets/images/vulnhub-lupinone-writeup/lupinone-logo.png
   teaser_home_page: true
   icon: /blog/assets/images/vulnhub.png
 categories:
@@ -31,7 +31,6 @@ This writeup covers the following phases of a penetration test:
 - **John the Ripper**: Used to decrypt an SSH private key.
 - **Python**: Exploited a Python script to escalate privileges.
 
----
 
 ## Phase 1: Scanning
 
@@ -41,15 +40,11 @@ nmap -Pn -sV -O -p- -T4 -sC 10.0.0.5
 
 ![](../assets/images/vulnhub-lupinone-writeup/lupinnmap.png)
 
-## Phase 1: Scanning
-
 The scan reveals two open ports:
    - **Port 22**: Running OpenSSH 8.4p1.
    - **Port 80**: Running Apache/2.4.48.
 
 Additionally, the operating system is identified as a Linux version between 4.X and 5.X.
-
----
 
 ## Phase 2: Enumeration
 

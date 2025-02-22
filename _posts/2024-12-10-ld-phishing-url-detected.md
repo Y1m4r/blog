@@ -1,18 +1,18 @@
 ---
 layout: single
-title: Phishing URL Detected | Phishing Email Analysis
+title: Phishing URL Detected - Phishing Email Analysis
 excerpt: "A detailed walkthrough of analyzing and responding to a phishing URL detection alert in a SOC environment from Let's Defend."
 date: 2024-10-13
 classes: wide
 header:
   teaser: /blog/assets/images/phishing-alert/phishing-detection.png
   teaser_home_page: true
-  icon: /blog/assets/images/cybersecurity-alert.webp
+  icon: 
 categories:
   - Incident Response
 ---
 
-# SOC141 — Phishing URL Detected**  
+## SOC141 — Phishing URL Detected
 
 ## **Triggered Alert**  
 On **March 22nd**, an alert was triggered, indicating a **phishing URL** detected on the host system **EmilyComp** (IP: **172.16.17.49**). We will now claim the ticket and proceed with the investigation following our playbook.  

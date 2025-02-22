@@ -11,6 +11,7 @@ header:
 categories:
   - Incident Response
 ---
+
 **Scenario Details**
 
 **Description**  

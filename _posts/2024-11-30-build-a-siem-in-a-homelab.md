@@ -7,7 +7,7 @@ classes: wide
 header:
   teaser: /blog/assets/images/build-a-SIEM-in-a-homelab/siemlab-logo.png
   teaser_home_page: true
-  icon: /blog/assets/images/hackthebox.webp
+  icon: 
 categories:
   - Tools
 
