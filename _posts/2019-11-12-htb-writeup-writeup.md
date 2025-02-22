@@ -10,6 +10,7 @@ header:
   icon: /blog/assets/images/hackthebox.webp
 categories:
   - WriteUp
+  - HTB
 ---
 
 ![](/blog/assets/images/htb-writeup-writeup/writeup_logo.png)

@@ -1,15 +1,16 @@
 ---
 layout: single
 title: Cap - Hack The Box
-excerpt: ""
-date: 2024-10-08
+excerpt: "Cap is an easy Linux machine where an IDOR vulnerability exposes network captures containing plaintext credentials, allowing initial access. Privilege escalation is achieved by exploiting a Linux capability to gain root."
+date: 2024-10-20
 classes: wide
 header:
-  teaser: /blog/assets/images/htb-writeup-writeup/
+  teaser: /blog/assets/images/htb-writeup-cap/cap.jpg
   teaser_home_page: true
   icon: /blog/assets/images/hackthebox.webp
 categories:
   - WriteUp
+  - HTB
 ---
 
 

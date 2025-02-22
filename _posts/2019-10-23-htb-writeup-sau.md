@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Sau - Hack The Box
-excerpt: ""
-date: 2024-09-28
+excerpt: "Sau is an easy Linux machine exploiting SSRF in Request Baskets (CVE-2023-27163) to access a vulnerable Maltrail instance. An unauthenticated OS command injection grants a shell as puma, and sudo misconfiguration leads to root."
+date: 2024-10-23
 classes: wide
 header:
-  teaser: /blog/assets/images/htb-writeup-writeup/
+  teaser: /blog/assets/images/htb-writeup-sau/sau.jpg
   teaser_home_page: true
   icon: /blog/assets/images/hackthebox.webp
 categories:

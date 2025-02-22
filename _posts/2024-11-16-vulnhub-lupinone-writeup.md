@@ -2,14 +2,15 @@
 layout: single
 title: Lupin One - Vulnhub
 excerpt: "A detailed walkthrough of the scanning, enumeration, and exploitation phases during a penetration test, including the use of tools like Nmap, ffuf, and Metasploit."
-date: 2024-10-24
+date: 2024-11-16
 classes: wide
 header:
-  teaser: ../assets/images/vulnhub-lupinone-writeup/lupinone_logo.png
+  teaser: /blog/assets/images/vulnhub-lupinone-writeup/lupinone_logo.png
   teaser_home_page: true
-  icon: ../assets/images/hackthebox.webp
+  icon: /blog/assets/images/vulnhub.png
 categories:
   - WriteUp
+  - Vulnhub
 ---
 ![](../assets/images/vulnhub-lupinone-writeup/lupinone_logo.png)
 

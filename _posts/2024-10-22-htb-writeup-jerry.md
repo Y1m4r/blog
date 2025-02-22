@@ -1,15 +1,16 @@
 ---
 layout: single
 title: Jerry - Hack The Box
-excerpt: ""
-date: 2024-10-04
+excerpt: "Jerry is an easy Hack The Box machine that realistically simulates exposed Apache Tomcat instances with weak or default credentials."
+date: 2024-10-22
 classes: wide
 header:
-  teaser: /blog/assets/images/htb-writeup-writeup/
+  teaser: /blog/assets/images/htb-writeup-jerry/jerry.jpg
   teaser_home_page: true
   icon: /blog/assets/images/hackthebox.webp
 categories:
   - WriteUp
+  - HTB
 ---
 
 #### **SYNOPSIS**  

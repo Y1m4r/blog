@@ -1,11 +1,11 @@
 ---
 layout: single
-title: Sau - Hack The Box
-excerpt: ""
-date: 2024-10-08
+title: Good Games - Hack The Box
+excerpt: "GoodGames is an easy Linux machine highlighting SQL injection, weak hashing risks, and password reuse dangers. It also demonstrates SSTI via render_template_string in Python. Privilege escalation is achieved through Docker enumeration, leveraging container admin access to gain root on the host."
+date: 2024-10-26
 classes: wide
 header:
-  teaser: /blog/assets/images/htb-writeup-writeup/
+  teaser: /blog/assets/images/htb-writeup-goodgames/goodgames.jpg
   teaser_home_page: true
   icon: /blog/assets/images/hackthebox.webp
 categories:

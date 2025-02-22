@@ -2,7 +2,7 @@
 layout: single
 title: Password Brute Forcer Using Python
 excerpt: "A Python script to brute-force passwords with a focus on ethical use. This program cracks passwords of length 1 to 7, using lowercase letters and numbers."
-date: 2024-10-24
+date: 2025-1-20
 classes: wide
 header:
   teaser: /blog/assets/images/pwd-brute-forcer/bruteforce.png
