@@ -13,7 +13,7 @@ categories:
   - Vulnhub
 ---
 
-![](../assets/images/vulnhub-myexpense-writeup/myexpense-logo.png) # Replace with your actual header image path
+![](../assets/images/vulnhub-myexpense-writeup/myexpense-logo.png)
 
 This write-up details the steps taken to exploit the MyExpense deliberately vulnerable web application. The scenario involves a former employee, Samuel Lamotte, hacking the internal expense reporting system to get his final expense report approved after being fired. The exploitation involves chaining multiple vulnerabilities including Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), Insecure Direct Object References (IDOR), and SQL Injection.
 
@@ -75,6 +75,7 @@ dirb http://192.168.1.25
 ![alt text](../assets/images/vulnhub-myexpense-writeup/myexpense3.png)
 
 This scan found `robots.txt`, which revealed the path `/admin/admin.php`.
+
 ![alt text](../assets/images/vulnhub-myexpense-writeup/myexpense4.png)
 
 ### Admin Interface and User Status
