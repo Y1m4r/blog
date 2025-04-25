@@ -1,3 +1,4 @@
+---
 layout: single
 title: MyExpense - Vulnhub
 excerpt: "A walkthrough of the MyExpense Vulnhub machine, detailing the exploitation of XSS, CSRF, IDOR, and SQL Injection vulnerabilities to achieve the goal of getting an expense report approved."
